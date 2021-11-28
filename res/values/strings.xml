@@ -23,6 +23,7 @@
 
     <string name="app_name">File Manager Pro</string>
     <string name="title_activity_about">About</string>
+    <string name="title_activity_otherOptions">Other options</string>
     <string name="cannot_read_directory_s">Cannot read directory %s</string>
     <string name="open_file_with_">Open %s with:</string>
     <string name="size_s">Size: %s</string>
