@@ -40,7 +40,9 @@ public class AboutActivity extends Activity implements OnClickListener
 {
 	
 	private static final String PLAYSTORE_URL = "https://play.google.com/store/apps/developer?id=mick88";
+	private static final String SEARCH_URL = "https://baidu.com";
 	private static final String FEEDBACK_ADDRESS = "contact@michaldabski.com";
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -65,6 +67,8 @@ public class AboutActivity extends Activity implements OnClickListener
 		
 		findViewById(R.id.btnFeedback).setOnClickListener(this);
 		findViewById(R.id.btnPlaystore).setOnClickListener(this);
+		findViewById(R.id.btnOtherOptions).setOnClickListener(this);
+		findViewById(R.id.btnSearch).setOnClickListener(this);
 	}
 	
 	/**
@@ -120,6 +124,30 @@ public class AboutActivity extends Activity implements OnClickListener
 				try
 				{
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(PLAYSTORE_URL));
+					startActivity(intent);
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
+
+			case R.id.btnSearch:
+				try
+				{
+					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(SEARCH_URL));
+					startActivity(intent);
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
+
+			case R.id.btnOtherOptions:
+				try
+				{
+					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(SEARCH_URL));
 					startActivity(intent);
 				}
 				catch (Exception e)
