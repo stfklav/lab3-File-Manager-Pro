@@ -278,10 +278,6 @@ public class FolderActivity extends Activity implements OnItemClickListener, Cli
 			case R.id.menu_about:
 				startActivity(new Intent(getApplicationContext(), AboutActivity.class));
 				return true;
-
-			case R.id.menu_otherOptions:
-				startActivity(new Intent(getApplicationContext(), AboutActivity.class));
-				return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}

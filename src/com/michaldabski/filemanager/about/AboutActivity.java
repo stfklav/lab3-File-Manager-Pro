@@ -147,7 +147,7 @@ public class AboutActivity extends Activity implements OnClickListener
 			case R.id.btnOtherOptions:
 				try
 				{
-					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(SEARCH_URL));
+					Intent intent = new Intent(this, AboutActivity.class);
 					startActivity(intent);
 				}
 				catch (Exception e)

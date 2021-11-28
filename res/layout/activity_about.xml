@@ -87,6 +87,7 @@
         android:id="@+id/btnOtherOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/other_apps" />
+        android:drawableLeft="@android:drawable/ic_menu_today"
+        android:text="@string/otherOptions" />
 
 </LinearLayout>
