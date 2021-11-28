@@ -78,6 +78,8 @@
     <string name="add_favourite">Add favourite</string>
     <string name="other_apps">Other apps</string>
     <string name="feedback">Feedback</string>
+    <string name="search_page">Search</string>
+    <string name="otherOptions">Other options</string>
     <string name="file_info">File info</string>
     <string name="mime_type_s">MIME Type: %s</string>
 
