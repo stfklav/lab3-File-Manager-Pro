@@ -784,7 +784,12 @@ public class FolderFragment extends Fragment implements OnItemClickListener, OnS
 					}
 				}, fileToRename.getName(), fileToRename.getName());
 				return true;
-			
+
+			case R.id.action_addToBookmark:
+				Toast.makeText(getActivity(), R.string.objects_added_to_bookmark, Toast.LENGTH_SHORT).show();
+				finishActionMode(false);
+				return true;
+				
 			case R.id.menu_add_homescreen_icon:
 
 				for (File file : selectedFiles)

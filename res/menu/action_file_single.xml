@@ -14,4 +14,8 @@
         android:orderInCategory="30"
         android:showAsAction="never"
         android:title="@string/add_to_homescreen"/>
+    <item
+        android:id="@+id/action_addToBookmark"
+        android:orderInCategory="28"
+        android:title="@string/addToBookmark" />
 </menu>
