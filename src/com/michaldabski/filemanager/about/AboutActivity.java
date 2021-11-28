@@ -41,6 +41,7 @@ public class AboutActivity extends Activity implements OnClickListener
 	
 	private static final String PLAYSTORE_URL = "https://play.google.com/store/apps/developer?id=mick88";
 	private static final String SEARCH_URL = "https://baidu.com";
+	private static final String OTHER_URL = "https://github.com";
 	private static final String FEEDBACK_ADDRESS = "contact@michaldabski.com";
 
 
@@ -147,7 +148,7 @@ public class AboutActivity extends Activity implements OnClickListener
 			case R.id.btnOtherOptions:
 				try
 				{
-					Intent intent = new Intent(this, AboutActivity.class);
+					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(OTHER_URL));
 					startActivity(intent);
 				}
 				catch (Exception e)
